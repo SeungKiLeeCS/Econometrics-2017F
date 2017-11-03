@@ -8,7 +8,7 @@
 * Exam Reviews
     * [Exam 1 Review](exams/exam1.html)
 * Homeworks
-    * [Homework 3](/homeworks/homework3.html)
+    * [Homework 3](homeworks/homework3.html)
 * [STATA Cheatsheet](STATA.html)
 
 

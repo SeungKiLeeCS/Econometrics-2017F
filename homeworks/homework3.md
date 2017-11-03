@@ -30,3 +30,7 @@ Again to see the difference, t-statistics $0.0030 \over 0.0030$ = $1$. The degre
 ### iv)
 
 ​	Computing F-Statistic requires two regressions in use to have same sets of observations. With sample size of the first regression being greater than that of the second, we can predict that the dataset we have is missing some observations of $mothereduc$ and $fathereduc$. And because these two regressions have sample sizes we are unable to compute F-statistic. If we wanted to do this we will have to estimate the first regression again with adjusted 1191 observations to match that of second regression and compute a new $R^2$.
+
+
+
+[Go To List of Contents](SUMMARYhtml.html)
