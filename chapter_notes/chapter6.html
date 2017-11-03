@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>chapter6.md</title><link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --code-block-bg-color: inherit; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { background: rgb(181, 214, 252); text-shadow: none; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; contain: layout paint; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+.typora-export #write { margin: 0px auto; }
+#write > p:first-child, #write > ul:first-child, #write > ol:first-child, #write > pre:first-child, #write > blockquote:first-child, #write > div:first-child, #write > table:first-child { margin-top: 30px; }
+#write li > table:first-child { margin-top: -20px; }
+img { max-width: 100%; vertical-align: middle; }
+input, button, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+::before, ::after, * { box-sizing: border-box; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write div, #write pre { width: inherit; }
+#write p, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { position: relative; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-start: 0px; -webkit-margin-end: 0px; }
+.typora-export p { white-space: normal; }
+.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0rem; -webkit-margin-after: 0rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: bold; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; margin: 4px 0px 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 80px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+pre { white-space: pre-wrap; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: var(--code-block-bg-color); position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences .CodeMirror.CodeMirror-wrap { top: -1.6em; margin-bottom: -1.6em; }
+.md-fences.mock-cm { white-space: pre-wrap; }
+.show-fences-line-number .md-fences { padding-left: 0px; }
+.show-fences-line-number .md-fences.mock-cm { padding-left: 40px; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; padding-top: 1em; padding-bottom: 1em; }
+.footnotes + .footnotes { margin-top: -1em; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: transparent; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: normal; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li p, li .mathjax-block { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; }
+@media print {
+  html, body { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  h1, h2, h3, h4, h5, h6 { break-after: avoid-page; orphans: 2; }
+  p { orphans: 4; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0mm; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 2.86rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.mathjax-block { white-space: pre; overflow: hidden; width: 100%; }
+p + .mathjax-block { margin-top: -1.143rem; }
+.mathjax-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: none; box-shadow: none; }
+.task-list { list-style-type: none; }
+.task-list-item { position: relative; padding-left: 1em; }
+.task-list-item input { position: absolute; top: 0px; left: 0px; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc::after, .md-toc-content::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: bold; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+.md-tag { opacity: 0.5; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: monospace; }
+code { text-align: left; }
+h1 .md-tag, h2 .md-tag, h3 .md-tag, h4 .md-tag, h5 .md-tag, h6 .md-tag { font-weight: initial; opacity: 0.35; }
+a.md-print-anchor { border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: none !important; background: transparent !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.mathjax-block .MathJax_SVG_Display { text-align: center; margin: 1em 0em; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: monospace; }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: normal; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; }
+
+
+@font-face { font-family: "PT Serif"; font-style: normal; font-weight: normal; src: local("PT Serif"), local("PTSerif-Regular"), url("./newsprint/PT_Serif-Web-Regular.ttf"); }
+@font-face { font-family: "PT Serif"; font-style: italic; font-weight: normal; src: local("PT Serif"), local("PTSerif-Italic"), url("./newsprint/PT_Serif-Web-Italic.ttf"); }
+@font-face { font-family: "PT Serif"; font-style: normal; font-weight: bold; src: local("PT Serif"), local("PTSerif-Bold"), url("./newsprint/PT_Serif-Web-Bold.ttf"); }
+@font-face { font-family: "PT Serif"; font-style: italic; font-weight: bold; src: local("PT Serif"), local("PTSerif-BoldItalic"), url("./newsprint/PT_Serif-Web-BoldItalic.ttf"); }
+:root { --active-file-bg-color: rgba(32, 43, 51, 0.63); --active-file-text-color: white; --bg-color: #f3f2ee; --text-color: #1f0909; }
+html { font-size: 16px; }
+html, body { background-color: rgb(243, 242, 238); font-family: "PT Serif", "Times New Roman", Times; color: rgb(31, 9, 9); line-height: 1.5em; }
+#write { max-width: 40em; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote::before, blockquote::after, q::before, q::after { content: none; }
+table { border-collapse: collapse; border-spacing: 0px; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+h1 { font-size: 1.875em; line-height: 1.6em; margin-top: 2em; }
+h2, h3 { font-size: 1.3125em; line-height: 1.15; margin-top: 2.28571em; margin-bottom: 1.15em; }
+h3 { font-weight: normal; }
+h4 { font-size: 1.125em; margin-top: 2.67em; }
+h5, h6 { font-size: 1em; }
+h1 { border-bottom: 1px solid; margin-bottom: 1.875em; padding-bottom: 0.8125em; }
+a { text-decoration: none; color: rgb(6, 85, 136); }
+a:hover, a:active { text-decoration: underline; }
+p, blockquote, .md-fences { margin-bottom: 1.5em; }
+h1, h2, h3, h4, h5, h6 { margin-bottom: 1.5em; }
+blockquote { font-style: italic; border-left: 5px solid; margin-left: 2em; padding-left: 1em; }
+ul, ol { margin: 0px 0px 1.5em 1.5em; }
+ol li { list-style-type: decimal; list-style-position: outside; }
+ul li { list-style-type: disc; list-style-position: outside; }
+.md-meta, .md-before, .md-after { color: rgb(153, 153, 153); }
+table { margin-bottom: 1.5em; font-size: 1em; }
+thead th, tfoot th { padding: 0.25em 0.25em 0.25em 0.4em; text-transform: uppercase; }
+th { text-align: left; }
+td { vertical-align: top; padding: 0.25em 0.25em 0.25em 0.4em; }
+code, .md-fences { background-color: rgb(218, 218, 218); padding-left: 1ch; padding-right: 1ch; }
+.md-fences { margin-left: 2em; margin-bottom: 3em; }
+.md-fences .CodeMirror.CodeMirror-wrap { top: -0.8em; }
+pre, code, tt { font-size: 0.875em; line-height: 1.71429em; }
+h1 { line-height: 1.3em; font-weight: normal; margin-bottom: 0.5em; }
+p + ul, p + ol { margin-top: -1em; }
+h3 + ul, h4 + ul, h5 + ul, h6 + ul, h3 + ol, h4 + ol, h5 + ol, h6 + ol { margin-top: 0.5em; }
+li > ul, li > ol { margin-top: inherit; }
+h2, h3 { margin-bottom: 0.75em; }
+hr { border-top: none; border-right: none; border-bottom: 1px solid; border-left: none; }
+h1 { border-color: rgb(197, 197, 197); }
+blockquote { border-color: rgb(186, 186, 186); color: rgb(101, 101, 101); }
+thead.md-table-edit { background-color: transparent; }
+thead { background-color: rgb(218, 218, 218); }
+tr:nth-child(2n) { background: rgb(232, 231, 231); }
+hr { border-color: rgb(197, 197, 197); }
+.task-list { padding-left: 1rem; }
+.task-list-item { padding-left: 1.5rem; list-style-type: none; }
+.task-list-item input::before { content: "√"; display: inline-block; width: 1.25rem; height: 1.6rem; vertical-align: middle; text-align: center; color: rgb(221, 221, 221); background-color: rgb(243, 242, 238); }
+.task-list-item input:checked::before, .task-list-item input[checked]::before { color: inherit; }
+#write pre.md-meta-block { min-height: 1.875rem; color: rgb(85, 85, 85); border: 0px; background: transparent; margin-left: 1em; margin-top: 1em; }
+.md-image > .md-meta { color: rgb(155, 81, 70); }
+.md-image > .md-meta { font-family: Menlo, "Ubuntu Mono", Consolas, "Courier New", "Microsoft Yahei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif; }
+#write > h3.md-focus::before { left: -1.5rem; color: rgb(153, 153, 153); border-color: rgb(153, 153, 153); }
+#write > h4.md-focus::before { left: -1.5rem; top: 0.25rem; color: rgb(153, 153, 153); border-color: rgb(153, 153, 153); }
+#write > h5.md-focus::before { left: -1.5rem; color: rgb(153, 153, 153); border-color: rgb(153, 153, 153); }
+#write > h6.md-focus::before { left: -1.5rem; top: 0.3125rem; color: rgb(153, 153, 153); border-color: rgb(153, 153, 153); }
+.md-toc:focus .md-toc-content { margin-top: 19px; }
+.md-toc-content:empty::before { color: rgb(6, 85, 136); }
+.md-toc-item { color: rgb(6, 85, 136); }
+#write div.md-toc-tooltip { background-color: rgb(243, 242, 238); }
+#typora-sidebar { background-color: rgb(243, 242, 238); box-shadow: rgba(0, 0, 0, 0.376) 0px 6px 12px; }
+.pin-outline #typora-sidebar { background: inherit; box-shadow: none; border-right: 1px dashed; }
+.pin-outline #typora-sidebar:hover .outline-title-wrapper { border-left: 1px dashed; }
+.outline-item:hover { background-color: rgb(218, 218, 218); border-left: 28px solid rgb(218, 218, 218); border-right: 18px solid rgb(218, 218, 218); }
+.typora-node .outline-item:hover { border-right: 28px solid rgb(218, 218, 218); }
+.outline-expander::before { content: ""; font-family: FontAwesome; font-size: 14px; top: 1px; }
+.outline-expander:hover::before, .outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.modal-content { background-color: rgb(243, 242, 238); }
+.auto-suggest-container ul li { list-style-type: none; }
+.megamenu-menu, #top-titlebar, #top-titlebar *, .megamenu-content { background: rgb(243, 242, 238); color: rgb(31, 9, 9); }
+.megamenu-menu-header { border-bottom: 1px dashed rgb(32, 43, 51); }
+.megamenu-menu { box-shadow: none; border-right: 1px dashed; }
+header, .context-menu, .megamenu-content, footer { font-family: "PT Serif", "Times New Roman", Times; color: rgb(31, 9, 9); }
+#megamenu-back-btn { color: rgb(31, 9, 9); border-color: rgb(31, 9, 9); }
+.megamenu-menu-header #megamenu-menu-header-title::before { color: rgb(31, 9, 9); }
+.megamenu-menu-list li a:hover, .megamenu-menu-list li a.active { color: inherit; background-color: rgb(232, 231, 223); }
+.long-btn:hover { background-color: rgb(232, 231, 223); }
+#recent-file-panel tbody tr:nth-child(2n-1) { background-color: transparent !important; }
+.megamenu-menu-panel tbody tr:hover td:nth-child(2) { color: inherit; }
+.megamenu-menu-panel .btn { background-color: rgb(210, 209, 209); }
+.btn-default { background-color: transparent; }
+.typora-sourceview-on #toggle-sourceview-btn, .show-word-count #footer-word-count { background: rgb(199, 197, 197); }
+#typora-quick-open { background-color: inherit; }
+.md-diagram-panel { margin-left: -1ch; margin-top: 24px; }
+.file-list-item-file-name { font-weight: initial; }
+.file-list-item-summary { opacity: 1; }
+.file-list-item { color: rgb(119, 119, 119); }
+.file-list-item.active { background-color: inherit; color: black; }
+.file-list-item.active .file-list-item-file-name { font-weight: bold; }
+.file-list-item { opacity: 1 !important; }
+.file-library-node.active > .file-node-background { background-color: var(--active-file-bg-color); }
+.file-tree-node.active > .file-node-content { color: var(--active-file-text-color); }
+
+
+body { font-family: Courier; }
+h1, h2, h3, h4, h5, h6 { font-family: Courier; font-weight: normal; clear: both; word-wrap: break-word; margin: 0px; padding: 0px; }
+
+
+
+
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-node show-fences-line-number'><h1><a name='header-n0' class='md-header-anchor '></a>Econometrics Class Notes</h1><p></p><h1><a name='header-n4' class='md-header-anchor '></a>Chapter 6 : Data Scaling and OLS</h1><p></p><h2><a name='header-n7' class='md-header-anchor '></a>Change in Unit of Measurement</h2><p></p><h3><a name='header-n10' class='md-header-anchor '></a>Dependent Variable (y)</h3><p>For dependent variable, if you change the OZ to lb on a regression, it is the same as multiplying the result calculated for β will change by the ratio between the change in measurement. Since 16oz = 1lb, the coefficients will be multiplied by the same amount as the dependent variable unit</p><h3><a name='header-n13' class='md-header-anchor '></a>Independent Variable (x)</h3><p>Same as the dependent variable, but the change will be limited to the specific independent variable.</p><h3><a name='header-n16' class='md-header-anchor '></a>Logarithmic Changes</h3><p>if the changes are made in logarithms, their will be no change in coefficients because you&#39;re already taking the percentage form of the coefficient.</p><p>In this case, the intercept will change instead of the coefficients.</p><h3><a name='header-n21' class='md-header-anchor '></a>Question:by what amount?</h3><p></p><h3><a name='header-n24' class='md-header-anchor '></a>Beta Coefficient or Standarized Coefficient</h3><p><span class="MathJax_Preview"></span><span class="MathJax_SVG" id="MathJax-Element-1-Frame" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.68ex" height="2.669ex" viewBox="0 -1020.1 723.5 1149.3" role="img" focusable="false" style="vertical-align: -0.3ex;"><defs><path stroke-width="1" id="E1-MJMATHI-5A" d="M58 8Q58 23 64 35Q64 36 329 334T596 635L586 637Q575 637 512 637H500H476Q442 637 420 635T365 624T311 598T266 548T228 469Q227 466 226 463T224 458T223 453T222 450L221 448Q218 443 202 443Q185 443 182 453L214 561Q228 606 241 651Q249 679 253 681Q256 683 487 683H718Q723 678 723 675Q723 673 717 649Q189 54 188 52L185 49H274Q369 50 377 51Q452 60 500 100T579 247Q587 272 590 277T603 282H607Q628 282 628 271Q547 5 541 2Q538 0 300 0H124Q58 0 58 8Z"></path><path stroke-width="1" id="E1-MJMAIN-5E" d="M112 560L249 694L257 686Q387 562 387 560L361 531Q359 532 303 581L250 627L195 580Q182 569 169 557T148 538L140 532Q138 530 125 546L112 560Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E1-MJMATHI-5A" x="0" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E1-MJMAIN-5E" x="220" y="249"></use></g></svg></span><script type="math/tex" id="MathJax-Element-1">\hat{Z}</script> has no intercept value, because you&#39;re running this with standarized values on Y. The equation for this is at</p><h2><a name='header-n27' class='md-header-anchor '></a><span class="MathJax_Preview"></span><span class="MathJax_SVG" id="MathJax-Element-2-Frame" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="7.629ex" height="3.274ex" viewBox="0 -971.4 3284.5 1409.6" role="img" focusable="false" style="vertical-align: -1.018ex;"><defs><path stroke-width="1" id="E2-MJMATHI-5A" d="M58 8Q58 23 64 35Q64 36 329 334T596 635L586 637Q575 637 512 637H500H476Q442 637 420 635T365 624T311 598T266 548T228 469Q227 466 226 463T224 458T223 453T222 450L221 448Q218 443 202 443Q185 443 182 453L214 561Q228 606 241 651Q249 679 253 681Q256 683 487 683H718Q723 678 723 675Q723 673 717 649Q189 54 188 52L185 49H274Q369 50 377 51Q452 60 500 100T579 247Q587 272 590 277T603 282H607Q628 282 628 271Q547 5 541 2Q538 0 300 0H124Q58 0 58 8Z"></path><path stroke-width="1" id="E2-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path stroke-width="1" id="E2-MJMATHI-78" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path><path stroke-width="1" id="E2-MJMAIN-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path stroke-width="1" id="E2-MJMAIN-5E" d="M112 560L249 694L257 686Q387 562 387 560L361 531Q359 532 303 581L250 627L195 580Q182 569 169 557T148 538L140 532Q138 530 125 546L112 560Z"></path><path stroke-width="1" id="E2-MJMATHI-3C3" d="M184 -11Q116 -11 74 34T31 147Q31 247 104 333T274 430Q275 431 414 431H552Q553 430 555 429T559 427T562 425T565 422T567 420T569 416T570 412T571 407T572 401Q572 357 507 357Q500 357 490 357T476 358H416L421 348Q439 310 439 263Q439 153 359 71T184 -11ZM361 278Q361 358 276 358Q152 358 115 184Q114 180 114 178Q106 141 106 117Q106 67 131 47T188 26Q242 26 287 73Q316 103 334 153T356 233T361 278Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g transform="translate(120,0)"><rect stroke="none" width="3044" height="60" x="0" y="220"></rect><g transform="translate(60,409)"><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMATHI-5A" x="0" y="0"></use><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMAIN-3D" x="1077" y="0"></use><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMATHI-78" x="2209" y="0"></use><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMAIN-2212" x="2781" y="0"></use><g transform="translate(2517,0)"><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMATHI-78" x="0" y="0"></use><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMAIN-5E" x="75" y="15"></use></g></g><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMATHI-3C3" x="1866" y="-488"></use></g></g></svg></span><script type="math/tex" id="MathJax-Element-2">Z \ = \ x-\hat{x} \over \sigma</script></h2><p></p><p><a href='../SUMMARYhtml.html'>Back to Contents</a></p></div>
+</body>
+</html>
