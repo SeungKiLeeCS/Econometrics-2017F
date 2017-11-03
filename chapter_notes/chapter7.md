@@ -1,20 +1,24 @@
 # Econometrics Class Notes
 
-# 
-
 # Chapter 7 : Qualitative Info
 
 2017/10/17
 
 ## Review
 
+---
+
 Z Score : Used to compare which independent variable has greater impact on dependent variable $\hat{y} \over \sigma_{y}$
 
 ## Quadratic Form
 
+---
+
 It is more difficult to interpretate the impact of a explanatory variable if we use quadratic form rather than linear form.
 
 ## Qualitative Variable (Dummy Variable)
+
+---
 
 In the regression a dummy variable is always a boolean value of [0,1]. It usually represents a qualitative trait and thus immeasurable.
 
@@ -28,9 +32,15 @@ here, the $\delta_{0}$ is the coefficient of the dummy variable $female$. The va
 
 Sometimes we have more than one dummy variable, but the problem comes when those two qualitative variables show perfect colinearity. If we have $male$ on top of $female$ in the above regression it will result in perfect colinearity as if female = 0, male is always = 1 and vice versa.
 
+
+
+## Multiple Degrees of Qualitative Variable
+
+---
+
 2017/10/19
 
-### Multiple Degrees of Qualitative Variable
+
 
 If we want to have varying degrees of Qualitative Variable and not a binary value we must **One Hot Encode** the set of qualitative variables. You do this by assuming one degree of qualitative variable is always 0 unless all other qualitative variables are 0. You can refer to this as base case. The assumption must stand where 1. all qualitative variables have binary value, 2. only one qualitative variable can be 1 in a single regression, and 3. every qualitative variables are zero indexed[it starts at 0, not 1]. Choose a **base case** and writing out everything else in the regression. It goes like this.
 

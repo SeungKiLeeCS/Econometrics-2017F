@@ -1,14 +1,12 @@
 # Econometrics Class Notes
 
-
-
 # Chapter 6 : Data Scaling and OLS
 
 
 
 ## Change in Unit of Measurement
 
-
+---
 
 ###Dependent Variable (y)
 

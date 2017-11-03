@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>chapter6.md</title><link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --code-block-bg-color: inherit; }
+<title>chapter6.md</title><link href='http://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic&subset=latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Lato:900,300&subset=latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --code-block-bg-color: inherit; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
 a:active, a:hover { outline: 0px; }
@@ -128,105 +129,98 @@ a.md-print-anchor { border-width: initial !important; border-style: none !import
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; }
 
 
-@font-face { font-family: "PT Serif"; font-style: normal; font-weight: normal; src: local("PT Serif"), local("PTSerif-Regular"), url("./newsprint/PT_Serif-Web-Regular.ttf"); }
-@font-face { font-family: "PT Serif"; font-style: italic; font-weight: normal; src: local("PT Serif"), local("PTSerif-Italic"), url("./newsprint/PT_Serif-Web-Italic.ttf"); }
-@font-face { font-family: "PT Serif"; font-style: normal; font-weight: bold; src: local("PT Serif"), local("PTSerif-Bold"), url("./newsprint/PT_Serif-Web-Bold.ttf"); }
-@font-face { font-family: "PT Serif"; font-style: italic; font-weight: bold; src: local("PT Serif"), local("PTSerif-BoldItalic"), url("./newsprint/PT_Serif-Web-BoldItalic.ttf"); }
-:root { --active-file-bg-color: rgba(32, 43, 51, 0.63); --active-file-text-color: white; --bg-color: #f3f2ee; --text-color: #1f0909; }
-html { font-size: 16px; }
-html, body { background-color: rgb(243, 242, 238); font-family: "PT Serif", "Times New Roman", Times; color: rgb(31, 9, 9); line-height: 1.5em; }
-#write { max-width: 40em; }
-ol, ul { list-style: none; }
-blockquote, q { quotes: none; }
-blockquote::before, blockquote::after, q::before, q::after { content: none; }
-table { border-collapse: collapse; border-spacing: 0px; }
-h1, h2, h3, h4, h5, h6 { font-weight: bold; }
-h1 { font-size: 1.875em; line-height: 1.6em; margin-top: 2em; }
-h2, h3 { font-size: 1.3125em; line-height: 1.15; margin-top: 2.28571em; margin-bottom: 1.15em; }
-h3 { font-weight: normal; }
-h4 { font-size: 1.125em; margin-top: 2.67em; }
-h5, h6 { font-size: 1em; }
-h1 { border-bottom: 1px solid; margin-bottom: 1.875em; padding-bottom: 0.8125em; }
-a { text-decoration: none; color: rgb(6, 85, 136); }
-a:hover, a:active { text-decoration: underline; }
-p, blockquote, .md-fences { margin-bottom: 1.5em; }
-h1, h2, h3, h4, h5, h6 { margin-bottom: 1.5em; }
-blockquote { font-style: italic; border-left: 5px solid; margin-left: 2em; padding-left: 1em; }
-ul, ol { margin: 0px 0px 1.5em 1.5em; }
-ol li { list-style-type: decimal; list-style-position: outside; }
-ul li { list-style-type: disc; list-style-position: outside; }
-.md-meta, .md-before, .md-after { color: rgb(153, 153, 153); }
-table { margin-bottom: 1.5em; font-size: 1em; }
-thead th, tfoot th { padding: 0.25em 0.25em 0.25em 0.4em; text-transform: uppercase; }
-th { text-align: left; }
-td { vertical-align: top; padding: 0.25em 0.25em 0.25em 0.4em; }
-code, .md-fences { background-color: rgb(218, 218, 218); padding-left: 1ch; padding-right: 1ch; }
-.md-fences { margin-left: 2em; margin-bottom: 3em; }
-.md-fences .CodeMirror.CodeMirror-wrap { top: -0.8em; }
-pre, code, tt { font-size: 0.875em; line-height: 1.71429em; }
-h1 { line-height: 1.3em; font-weight: normal; margin-bottom: 0.5em; }
-p + ul, p + ol { margin-top: -1em; }
-h3 + ul, h4 + ul, h5 + ul, h6 + ul, h3 + ol, h4 + ol, h5 + ol, h6 + ol { margin-top: 0.5em; }
-li > ul, li > ol { margin-top: inherit; }
-h2, h3 { margin-bottom: 0.75em; }
-hr { border-top: none; border-right: none; border-bottom: 1px solid; border-left: none; }
-h1 { border-color: rgb(197, 197, 197); }
-blockquote { border-color: rgb(186, 186, 186); color: rgb(101, 101, 101); }
-thead.md-table-edit { background-color: transparent; }
-thead { background-color: rgb(218, 218, 218); }
-tr:nth-child(2n) { background: rgb(232, 231, 231); }
-hr { border-color: rgb(197, 197, 197); }
-.task-list { padding-left: 1rem; }
-.task-list-item { padding-left: 1.5rem; list-style-type: none; }
-.task-list-item input::before { content: "√"; display: inline-block; width: 1.25rem; height: 1.6rem; vertical-align: middle; text-align: center; color: rgb(221, 221, 221); background-color: rgb(243, 242, 238); }
-.task-list-item input:checked::before, .task-list-item input[checked]::before { color: inherit; }
-#write pre.md-meta-block { min-height: 1.875rem; color: rgb(85, 85, 85); border: 0px; background: transparent; margin-left: 1em; margin-top: 1em; }
-.md-image > .md-meta { color: rgb(155, 81, 70); }
-.md-image > .md-meta { font-family: Menlo, "Ubuntu Mono", Consolas, "Courier New", "Microsoft Yahei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif; }
-#write > h3.md-focus::before { left: -1.5rem; color: rgb(153, 153, 153); border-color: rgb(153, 153, 153); }
-#write > h4.md-focus::before { left: -1.5rem; top: 0.25rem; color: rgb(153, 153, 153); border-color: rgb(153, 153, 153); }
-#write > h5.md-focus::before { left: -1.5rem; color: rgb(153, 153, 153); border-color: rgb(153, 153, 153); }
-#write > h6.md-focus::before { left: -1.5rem; top: 0.3125rem; color: rgb(153, 153, 153); border-color: rgb(153, 153, 153); }
+:root { --control-text-color: #777; }
+@font-face { font-family: Merriweather; font-style: normal; font-weight: 300; src: local("Merriweather Light"), local("Merriweather-Light"), url("./pixyll/Merriweather-Light.ttf"); }
+@font-face { font-family: Merriweather; font-style: normal; font-weight: 900; src: local("Merriweather Heavy"), local("Merriweather-Heavy"), url("./pixyll/Merriweather-Bold.ttf"); }
+@font-face { font-family: Merriweather; font-style: italic; font-weight: 300; src: local("Merriweather Light Italic"), local("Merriweather-LightItalic"), url("./pixyll/Merriweather-LightItalic.ttf"); }
+@font-face { font-family: Merriweather; font-style: italic; font-weight: 900; src: local("Merriweather Heavy Italic"), local("Merriweather-HeavyItalic"), url("./pixyll/Merriweather-BoldItalic.ttf"); }
+@font-face { font-family: Lato; font-style: normal; font-weight: 300; src: local("Lato Light"), local("Lato-Light"), url("./pixyll/Lato-Light.ttf"); }
+@font-face { font-family: Lato; font-style: normal; font-weight: 900; src: local("Lato Black"), local("Lato-Blcak"), url("./pixyll/Lato-Black.ttf"); }
+@font-face { font-family: Lato; font-style: normal; font-weight: bold; src: local("Lato Black"), local("Lato-Blcak"), url("./pixyll/Lato-Black.ttf"); }
+@font-face { font-family: Lato; font-style: italic; font-weight: 900; src: local("Lato BlackItalic"), local("Lato-BlackItalic"), url("./pixyll/Lato-BlackItalic.ttf"); }
+@font-face { font-family: Lato; font-style: italic; font-weight: bold; src: local("Lato BlackItalic"), local("Lato-BlackItalic"), url("./pixyll/Lato-BlackItalic.ttf"); }
+h1, .h1, .f1 { font-size: 2rem; line-height: 2.5rem; text-align: center; margin: auto; }
+h2, .h2, .f2 { font-size: 1.5rem; line-height: 2rem; text-align: center; margin: auto; }
+h3, .h3, .f3 { font-size: 1.25rem; line-height: 1.5rem; }
+p, .p, .f4, h4, h5, h6, dl, ol, ul, pre[cid], div[cid], #typora-source { font-size: 1.125rem; line-height: 1.5rem; }
+h4 { font-size: 1.13rem; }
+body { font-family: Merriweather, "PT Serif", Georgia, "Times New Roman", STSong, serif; line-height: 1.5rem; font-weight: 400; }
+#write { max-width: 914px; color: rgb(51, 51, 51); }
+img { width: auto; max-width: 100%; }
+body { font-size: 1.5rem; box-sizing: border-box; }
+.md-table-edit { background: rgb(237, 237, 237); padding-top: 4px; }
+table { width: 100%; font-size: 1.125rem; }
+table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table > tbody > tr > td, table > tfoot > tr > th, table > tfoot > tr > td { padding: 12px; line-height: 1.2; vertical-align: top; border-top: 1px solid rgb(51, 51, 51); }
+table > thead > tr > th { vertical-align: bottom; border-bottom: 2px solid rgb(51, 51, 51); }
+table > caption + thead > tr:first-child > th, table > caption + thead > tr:first-child > td, table > colgroup + thead > tr:first-child > th, table > colgroup + thead > tr:first-child > td, table > thead:first-child > tr:first-child > th, table > thead:first-child > tr:first-child > td { border-top: 0px; }
+table > tbody + tbody { border-top: 2px solid rgb(51, 51, 51); }
+p { font-weight: 300; line-height: 1.5; }
+abbr { border-bottom: 1px dotted black; cursor: help; }
+pre, code { font-family: Menlo, Monaco, "Courier New", monospace; }
+code, .md-fences { color: rgb(122, 122, 122); }
+.md-fences .CodeMirror.CodeMirror-wrap { top: -1.5em; margin-bottom: -1.5em; }
+.md-fences { padding: 1.125em; margin-bottom: 0.88em; font-size: 1rem; border: 1px solid rgb(122, 122, 122); }
+blockquote { padding: 1.33em; font-style: italic; border-left: 5px solid rgb(122, 122, 122); color: rgb(85, 85, 85); }
+blockquote em { color: rgb(0, 0, 0); }
+blockquote footer { font-size: 0.85rem; font-style: normal; background-color: rgb(255, 255, 255); color: rgb(122, 122, 122); border-color: transparent; }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { font-family: Lato, "Helvetica Neue", Helvetica, sans-serif; font-weight: 900; line-height: 1.2; margin: 1em 0px 0.5em; }
+@media screen and (min-width: 48em) {
+  .h1, h1 { font-size: 3.25rem; }
+  .h2, h2 { font-size: 2.298rem; }
+  .h3, h3 { font-size: 1.625rem; }
+  .h4, h4 { font-size: 1.3rem; }
+  #write > h4.md-focus::before, #write > h5.md-focus::before, #write > h6.md-focus::before { top: 1px; }
+  .p, p, li { font-size: 1.25rem; line-height: 1.8; }
+  table { font-size: 1.25rem; }
+}
+@media (max-width: 48em) {
+  blockquote { margin-left: 1rem; margin-right: 0px; padding: 0.5em; }
+  .h1, h1 { font-size: 2.827rem; }
+  .h2, h2 { font-size: 1.999rem; }
+  .h3, h3 { font-size: 1.413rem; }
+  .h4, h4 { font-size: 1.3rem; }
+}
+@media screen and (min-width: 64em) {
+  .h1, h1 { font-size: 4.498rem; }
+  .h2, h2 { font-size: 2.29rem; }
+  .h3, h3 { font-size: 1.9rem; }
+  .h4, h4 { font-size: 1.591rem; }
+  #write > h4.md-focus::before { top: 4px; }
+}
+a { color: rgb(70, 63, 92); text-decoration: underline; }
+#write { padding-top: 2rem; }
+#write pre.md-meta-block { min-height: 35px; padding: 2000px 1em 10px 0px; white-space: pre; border-width: 0px 30px; border-top-style: initial; border-bottom-style: initial; border-top-color: initial; border-bottom-color: initial; border-image: initial; border-left-style: solid; border-left-color: rgb(248, 248, 248); border-right-style: solid; border-right-color: rgb(248, 248, 248); width: 100vw; max-width: calc(100% + 60px); margin-left: -30px; margin-bottom: 2em; margin-top: -2010px; line-height: 1.5em; color: rgb(122, 122, 122); background-color: rgb(250, 250, 250); font-family: Lato, "Helvetica Neue", Helvetica, sans-serif; font-weight: 300; clear: both; font-size: 1.125rem; }
+.md-image > .md-meta { color: rgb(70, 63, 92); }
+.footnotes { font-size: 1.1rem; }
+.md-tag { font-family: Lato, "Helvetica Neue", Helvetica, sans-serif; }
+.code-tooltip { background: white; }
+.code-tooltip-content { font-size: 1.1rem; }
+.task-list { padding-left: 0px; }
+.task-list-item { padding-left: 34px; }
+.task-list-item input { width: 1.25rem; height: 1.25rem; display: block; -webkit-appearance: initial; top: -2px; }
+.task-list-item input:focus { outline: none; box-shadow: none; }
+.task-list-item input::before { border: 1px solid rgb(85, 85, 85); border-radius: 1.5rem; width: 1.5rem; height: 1.5rem; background: rgb(255, 255, 255); content: " "; transition: background-color 200ms ease-in-out; display: block; }
+.task-list-item input:checked::before, .task-list-item input[checked]::before { background: rgb(51, 51, 51); border-width: 2px; display: inline-block; transition: background-color 200ms ease-in-out; }
+.task-list-item input:checked::after, .task-list-item input[checked]::after { opacity: 1; }
+.task-list-item input::after { transition: opacity 0.05s ease-in-out; transform: rotate(-45deg); position: absolute; top: 0.4375rem; left: 0.28125rem; width: 0.9375rem; height: 0.5rem; border-width: 0px 0px 3px 3px; border-bottom-style: solid; border-left-style: solid; border-bottom-color: rgb(255, 255, 255); border-left-color: rgb(255, 255, 255); border-image: initial; border-top-style: initial; border-top-color: initial; border-right-style: initial; border-right-color: initial; content: " "; opacity: 0; }
+.md-tag { color: inherit; }
 .md-toc:focus .md-toc-content { margin-top: 19px; }
-.md-toc-content:empty::before { color: rgb(6, 85, 136); }
-.md-toc-item { color: rgb(6, 85, 136); }
-#write div.md-toc-tooltip { background-color: rgb(243, 242, 238); }
-#typora-sidebar { background-color: rgb(243, 242, 238); box-shadow: rgba(0, 0, 0, 0.376) 0px 6px 12px; }
-.pin-outline #typora-sidebar { background: inherit; box-shadow: none; border-right: 1px dashed; }
-.pin-outline #typora-sidebar:hover .outline-title-wrapper { border-left: 1px dashed; }
-.outline-item:hover { background-color: rgb(218, 218, 218); border-left: 28px solid rgb(218, 218, 218); border-right: 18px solid rgb(218, 218, 218); }
-.typora-node .outline-item:hover { border-right: 28px solid rgb(218, 218, 218); }
-.outline-expander::before { content: ""; font-family: FontAwesome; font-size: 14px; top: 1px; }
-.outline-expander:hover::before, .outline-item-open > .outline-item > .outline-expander::before { content: ""; }
-.modal-content { background-color: rgb(243, 242, 238); }
-.auto-suggest-container ul li { list-style-type: none; }
-.megamenu-menu, #top-titlebar, #top-titlebar *, .megamenu-content { background: rgb(243, 242, 238); color: rgb(31, 9, 9); }
-.megamenu-menu-header { border-bottom: 1px dashed rgb(32, 43, 51); }
-.megamenu-menu { box-shadow: none; border-right: 1px dashed; }
-header, .context-menu, .megamenu-content, footer { font-family: "PT Serif", "Times New Roman", Times; color: rgb(31, 9, 9); }
-#megamenu-back-btn { color: rgb(31, 9, 9); border-color: rgb(31, 9, 9); }
-.megamenu-menu-header #megamenu-menu-header-title::before { color: rgb(31, 9, 9); }
-.megamenu-menu-list li a:hover, .megamenu-menu-list li a.active { color: inherit; background-color: rgb(232, 231, 223); }
-.long-btn:hover { background-color: rgb(232, 231, 223); }
-#recent-file-panel tbody tr:nth-child(2n-1) { background-color: transparent !important; }
-.megamenu-menu-panel tbody tr:hover td:nth-child(2) { color: inherit; }
-.megamenu-menu-panel .btn { background-color: rgb(210, 209, 209); }
-.btn-default { background-color: transparent; }
-.typora-sourceview-on #toggle-sourceview-btn, .show-word-count #footer-word-count { background: rgb(199, 197, 197); }
-#typora-quick-open { background-color: inherit; }
-.md-diagram-panel { margin-left: -1ch; margin-top: 24px; }
-.file-list-item-file-name { font-weight: initial; }
-.file-list-item-summary { opacity: 1; }
-.file-list-item { color: rgb(119, 119, 119); }
-.file-list-item.active { background-color: inherit; color: black; }
-.file-list-item.active .file-list-item-file-name { font-weight: bold; }
-.file-list-item { opacity: 1 !important; }
-.file-library-node.active > .file-node-background { background-color: var(--active-file-bg-color); }
-.file-tree-node.active > .file-node-content { color: var(--active-file-text-color); }
+#typora-sidebar { font-size: 1rem !important; }
+.html-for-mac #typora-sidebar { background-color: white; }
+.outline-content li, .outline-content ul { font-size: 1rem !important; }
+.outline-title { line-height: inherit; margin-top: 10px; }
+.outline-expander { width: 18px; }
+.outline-expander::before { content: "+"; font-family: inherit; color: rgb(108, 108, 108); font-size: 1.5rem; top: 0.1rem; }
+.outline-expander:hover::before { content: "+"; }
+.outline-item-open > .outline-item > .outline-expander::before { content: "-"; }
+#typora-source { font-family: Courier, monospace; color: rgb(106, 106, 106); }
+.os-windows #typora-source { font-family: inherit; }
+.cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property, .CodeMirror.cm-s-typora-default div.CodeMirror-cursor { color: rgb(66, 139, 202); }
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number { color: rgb(119, 119, 119); }
+.preference-item-hint { margin-top: 16px; }
+.md-diagram-panel { margin-top: 24px; margin-left: -1.2em; }
 
 
-body { font-family: Courier; }
-h1, h2, h3, h4, h5, h6 { font-family: Courier; font-weight: normal; clear: both; word-wrap: break-word; margin: 0px; padding: 0px; }
 
 
 
@@ -234,6 +228,6 @@ h1, h2, h3, h4, h5, h6 { font-family: Courier; font-weight: normal; clear: both;
 </style>
 </head>
 <body class='typora-export' >
-<div  id='write'  class = 'is-node show-fences-line-number'><h1><a name='header-n0' class='md-header-anchor '></a>Econometrics Class Notes</h1><p></p><h1><a name='header-n4' class='md-header-anchor '></a>Chapter 6 : Data Scaling and OLS</h1><p></p><h2><a name='header-n7' class='md-header-anchor '></a>Change in Unit of Measurement</h2><p></p><h3><a name='header-n10' class='md-header-anchor '></a>Dependent Variable (y)</h3><p>For dependent variable, if you change the OZ to lb on a regression, it is the same as multiplying the result calculated for β will change by the ratio between the change in measurement. Since 16oz = 1lb, the coefficients will be multiplied by the same amount as the dependent variable unit</p><h3><a name='header-n13' class='md-header-anchor '></a>Independent Variable (x)</h3><p>Same as the dependent variable, but the change will be limited to the specific independent variable.</p><h3><a name='header-n16' class='md-header-anchor '></a>Logarithmic Changes</h3><p>if the changes are made in logarithms, their will be no change in coefficients because you&#39;re already taking the percentage form of the coefficient.</p><p>In this case, the intercept will change instead of the coefficients.</p><h3><a name='header-n21' class='md-header-anchor '></a>Question:by what amount?</h3><p></p><h3><a name='header-n24' class='md-header-anchor '></a>Beta Coefficient or Standarized Coefficient</h3><p><span class="MathJax_Preview"></span><span class="MathJax_SVG" id="MathJax-Element-1-Frame" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.68ex" height="2.669ex" viewBox="0 -1020.1 723.5 1149.3" role="img" focusable="false" style="vertical-align: -0.3ex;"><defs><path stroke-width="1" id="E1-MJMATHI-5A" d="M58 8Q58 23 64 35Q64 36 329 334T596 635L586 637Q575 637 512 637H500H476Q442 637 420 635T365 624T311 598T266 548T228 469Q227 466 226 463T224 458T223 453T222 450L221 448Q218 443 202 443Q185 443 182 453L214 561Q228 606 241 651Q249 679 253 681Q256 683 487 683H718Q723 678 723 675Q723 673 717 649Q189 54 188 52L185 49H274Q369 50 377 51Q452 60 500 100T579 247Q587 272 590 277T603 282H607Q628 282 628 271Q547 5 541 2Q538 0 300 0H124Q58 0 58 8Z"></path><path stroke-width="1" id="E1-MJMAIN-5E" d="M112 560L249 694L257 686Q387 562 387 560L361 531Q359 532 303 581L250 627L195 580Q182 569 169 557T148 538L140 532Q138 530 125 546L112 560Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E1-MJMATHI-5A" x="0" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E1-MJMAIN-5E" x="220" y="249"></use></g></svg></span><script type="math/tex" id="MathJax-Element-1">\hat{Z}</script> has no intercept value, because you&#39;re running this with standarized values on Y. The equation for this is at</p><h2><a name='header-n27' class='md-header-anchor '></a><span class="MathJax_Preview"></span><span class="MathJax_SVG" id="MathJax-Element-2-Frame" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="7.629ex" height="3.274ex" viewBox="0 -971.4 3284.5 1409.6" role="img" focusable="false" style="vertical-align: -1.018ex;"><defs><path stroke-width="1" id="E2-MJMATHI-5A" d="M58 8Q58 23 64 35Q64 36 329 334T596 635L586 637Q575 637 512 637H500H476Q442 637 420 635T365 624T311 598T266 548T228 469Q227 466 226 463T224 458T223 453T222 450L221 448Q218 443 202 443Q185 443 182 453L214 561Q228 606 241 651Q249 679 253 681Q256 683 487 683H718Q723 678 723 675Q723 673 717 649Q189 54 188 52L185 49H274Q369 50 377 51Q452 60 500 100T579 247Q587 272 590 277T603 282H607Q628 282 628 271Q547 5 541 2Q538 0 300 0H124Q58 0 58 8Z"></path><path stroke-width="1" id="E2-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path stroke-width="1" id="E2-MJMATHI-78" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path><path stroke-width="1" id="E2-MJMAIN-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path stroke-width="1" id="E2-MJMAIN-5E" d="M112 560L249 694L257 686Q387 562 387 560L361 531Q359 532 303 581L250 627L195 580Q182 569 169 557T148 538L140 532Q138 530 125 546L112 560Z"></path><path stroke-width="1" id="E2-MJMATHI-3C3" d="M184 -11Q116 -11 74 34T31 147Q31 247 104 333T274 430Q275 431 414 431H552Q553 430 555 429T559 427T562 425T565 422T567 420T569 416T570 412T571 407T572 401Q572 357 507 357Q500 357 490 357T476 358H416L421 348Q439 310 439 263Q439 153 359 71T184 -11ZM361 278Q361 358 276 358Q152 358 115 184Q114 180 114 178Q106 141 106 117Q106 67 131 47T188 26Q242 26 287 73Q316 103 334 153T356 233T361 278Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g transform="translate(120,0)"><rect stroke="none" width="3044" height="60" x="0" y="220"></rect><g transform="translate(60,409)"><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMATHI-5A" x="0" y="0"></use><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMAIN-3D" x="1077" y="0"></use><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMATHI-78" x="2209" y="0"></use><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMAIN-2212" x="2781" y="0"></use><g transform="translate(2517,0)"><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMATHI-78" x="0" y="0"></use><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMAIN-5E" x="75" y="15"></use></g></g><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMATHI-3C3" x="1866" y="-488"></use></g></g></svg></span><script type="math/tex" id="MathJax-Element-2">Z \ = \ x-\hat{x} \over \sigma</script></h2><p></p><p><a href='../SUMMARYhtml.html'>Back to Contents</a></p></div>
+<div  id='write'  class = 'is-node show-fences-line-number'><h1><a name='header-n0' class='md-header-anchor '></a>Econometrics Class Notes</h1><h1><a name='header-n2' class='md-header-anchor '></a>Chapter 6 : Data Scaling and OLS</h1><p></p><h2><a name='header-n5' class='md-header-anchor '></a>Change in Unit of Measurement</h2><hr /><h3><a name='header-n7' class='md-header-anchor '></a>Dependent Variable (y)</h3><p>For dependent variable, if you change the OZ to lb on a regression, it is the same as multiplying the result calculated for β will change by the ratio between the change in measurement. Since 16oz = 1lb, the coefficients will be multiplied by the same amount as the dependent variable unit</p><h3><a name='header-n10' class='md-header-anchor '></a>Independent Variable (x)</h3><p>Same as the dependent variable, but the change will be limited to the specific independent variable.</p><h3><a name='header-n13' class='md-header-anchor '></a>Logarithmic Changes</h3><p>if the changes are made in logarithms, their will be no change in coefficients because you&#39;re already taking the percentage form of the coefficient.</p><p>In this case, the intercept will change instead of the coefficients.</p><h3><a name='header-n18' class='md-header-anchor '></a>Question:by what amount?</h3><p></p><h3><a name='header-n21' class='md-header-anchor '></a>Beta Coefficient or Standarized Coefficient</h3><p><span class="MathJax_Preview"></span><span class="MathJax_SVG" id="MathJax-Element-1-Frame" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.68ex" height="2.484ex" viewBox="0 -978.5 723.5 1069.3" role="img" focusable="false" style="vertical-align: -0.211ex;"><defs><path stroke-width="1" id="E1-MJMATHI-5A" d="M58 8Q58 23 64 35Q64 36 329 334T596 635L586 637Q575 637 512 637H500H476Q442 637 420 635T365 624T311 598T266 548T228 469Q227 466 226 463T224 458T223 453T222 450L221 448Q218 443 202 443Q185 443 182 453L214 561Q228 606 241 651Q249 679 253 681Q256 683 487 683H718Q723 678 723 675Q723 673 717 649Q189 54 188 52L185 49H274Q369 50 377 51Q452 60 500 100T579 247Q587 272 590 277T603 282H607Q628 282 628 271Q547 5 541 2Q538 0 300 0H124Q58 0 58 8Z"></path><path stroke-width="1" id="E1-MJMAIN-5E" d="M112 560L249 694L257 686Q387 562 387 560L361 531Q359 532 303 581L250 627L195 580Q182 569 169 557T148 538L140 532Q138 530 125 546L112 560Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E1-MJMATHI-5A" x="0" y="0"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E1-MJMAIN-5E" x="220" y="220"></use></g></svg></span><script type="math/tex" id="MathJax-Element-1">\hat{Z}</script> has no intercept value, because you&#39;re running this with standarized values on Y. The equation for this is at</p><h2><a name='header-n24' class='md-header-anchor '></a><span class="MathJax_Preview"></span><span class="MathJax_SVG" id="MathJax-Element-2-Frame" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="7.629ex" height="3.018ex" viewBox="0 -908.9 3284.5 1299.5" role="img" focusable="false" style="vertical-align: -0.907ex;"><defs><path stroke-width="1" id="E2-MJMATHI-5A" d="M58 8Q58 23 64 35Q64 36 329 334T596 635L586 637Q575 637 512 637H500H476Q442 637 420 635T365 624T311 598T266 548T228 469Q227 466 226 463T224 458T223 453T222 450L221 448Q218 443 202 443Q185 443 182 453L214 561Q228 606 241 651Q249 679 253 681Q256 683 487 683H718Q723 678 723 675Q723 673 717 649Q189 54 188 52L185 49H274Q369 50 377 51Q452 60 500 100T579 247Q587 272 590 277T603 282H607Q628 282 628 271Q547 5 541 2Q538 0 300 0H124Q58 0 58 8Z"></path><path stroke-width="1" id="E2-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path stroke-width="1" id="E2-MJMATHI-78" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path><path stroke-width="1" id="E2-MJMAIN-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path stroke-width="1" id="E2-MJMAIN-5E" d="M112 560L249 694L257 686Q387 562 387 560L361 531Q359 532 303 581L250 627L195 580Q182 569 169 557T148 538L140 532Q138 530 125 546L112 560Z"></path><path stroke-width="1" id="E2-MJMATHI-3C3" d="M184 -11Q116 -11 74 34T31 147Q31 247 104 333T274 430Q275 431 414 431H552Q553 430 555 429T559 427T562 425T565 422T567 420T569 416T570 412T571 407T572 401Q572 357 507 357Q500 357 490 357T476 358H416L421 348Q439 310 439 263Q439 153 359 71T184 -11ZM361 278Q361 358 276 358Q152 358 115 184Q114 180 114 178Q106 141 106 117Q106 67 131 47T188 26Q242 26 287 73Q316 103 334 153T356 233T361 278Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g transform="translate(120,0)"><rect stroke="none" width="3044" height="60" x="0" y="220"></rect><g transform="translate(60,393)"><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMATHI-5A" x="0" y="0"></use><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMAIN-3D" x="1077" y="0"></use><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMATHI-78" x="2209" y="0"></use><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMAIN-2212" x="2781" y="0"></use><g transform="translate(2517,0)"><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMATHI-78" x="0" y="0"></use><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMAIN-5E" x="75" y="-27"></use></g></g><use transform="scale(0.707)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#E2-MJMATHI-3C3" x="1866" y="-488"></use></g></g></svg></span><script type="math/tex" id="MathJax-Element-2">Z \ = \ x-\hat{x} \over \sigma</script></h2><p></p><p><a href='../SUMMARYhtml.html'>Back to Contents</a></p></div>
 </body>
 </html>
