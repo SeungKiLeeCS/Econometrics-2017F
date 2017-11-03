@@ -1,6 +1,6 @@
 # Econometrics using STATA
 
-**This is Edited to be Deployed in Render HTML using Typora**
+**This is .md file without latex support on github**
 
 ## Objective
 
@@ -16,4 +16,4 @@ The book will be written under following three principles:
 
 **3. I will use "Normee" Terms:** Sounding elegant is great, but not at the cost of being imprecise. If I'm not succinct in delivering this information then this text has lost its purpose. I will make sure to express the relevant information in succinct and precise terms even if it comes at a cost of being dull.
 
-[Go To List of Contents](SUMMARYhtml.html)
+[Go To List of Contents](SUMMARY.md)
