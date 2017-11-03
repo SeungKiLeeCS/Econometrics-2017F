@@ -7,6 +7,8 @@
     * [Chapter 8 : Heteroskedasticity](chapter_notes/chapter8.html)
 * Exam Reviews
     * [Exam 1 Review](exams/exam1.html)
+* Homeworks
+    * [Homework 3](/homeworks/homework3.html)
 * [STATA Cheatsheet](STATA.html)
 
 
