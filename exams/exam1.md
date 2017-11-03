@@ -93,4 +93,4 @@ For both of $educ$ and $exper$ we see the P value is 0.000. So we reject the hyp
 
 CURRENTLY EDITING . . .
 
-[Go To List of Contents](SUMMARYhtml.html)
+[Go To List of Contents](../SUMMARYhtml.html)

@@ -33,4 +33,4 @@ Again to see the difference, t-statistics $0.0030 \over 0.0030$ = $1$. The degre
 
 
 
-[Go To List of Contents](SUMMARYhtml.html)
+[Go To List of Contents](../SUMMARYhtml.html)
