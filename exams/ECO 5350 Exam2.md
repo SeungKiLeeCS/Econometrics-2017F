@@ -12,17 +12,13 @@
 
    price = $\beta_{0}$ + $\beta_{1}$lotsize + $\beta_{2}$sqrft + $\beta_{3}$bdrms + $\beta_{4}$assess
 
-   price = -38.89 + 0.00059 lotsize -0.00052 sqrft + 11.60 bdrms + 0.91 assess
-
-   ​	     (21.50)        (0.00050)            (0.017)              (6.55)                (0.10)
+   ​price = $\underset{(21.50)}{-38.89}$ + $\underset{(0.00050)}{0.00059}$lotsize -$\underset{(0.017)}{0.00052}$ sqrft + $\underset{(6.55)}{11.60}$ bdrms + $\underset{(0.10)}{0.91}$ assess
 
    ​
 
 2. **Write above equation using beta coefficients.**
 
-   $Z$price = 0.058 $Z$lotsize - 0.0029 $Z$sqrft + 0.095 $Z$bdrms + 0.84 $Z$assess
-
-   ​		    (0.00050)               (0.017)              (6.55)                   (0.10)
+   $Z$price = $\underset{(0.00050)}{0.058} $ $Z$lotsize - $\underset{(0.017)}{0.0029}$  $Z$sqrft + $\underset{(6.55)}{0.095}$ Zbdrms + $\underset{(0.10)}{0.84}$ Zassess
 
    ​
 
@@ -34,11 +30,9 @@
 
 4. **For the equation in (1), add interaction of sqrft and bdrms. Write the new equation below.**
 
-   $Let \ interaction \ term$ = $sqr_bdr$
+   $Let \ interaction \ term$ = $sqrftbdrms$
 
-   price = 65.28 + 0.00059 lotsize -0.046 sqrft -14.66 bdrms + 0.88 assess + 0.012 sqr_bdr
-
-   ​	     (65.64)    (0.00049)            (0.032)          (16.95)             (0.10)                  (0.0072)
+   price = $\underset{(65.64)}{65.28}$ + $\underset{(0.00049)}{0.00059}$ lotsize -$\underset{(0.032)}{0.046}$ sqrft -$\underset{(16.95)}{14.66}$ bdrms + $\underset{(0.10)}{0.88}$ assess + $\underset{(0.0072)}{0.012}$ sqrftbdrms
 
    ​
 
@@ -104,9 +98,7 @@
 
    > Without Correction
 
-   respond = 0.0023 + 0.00018 avggift + 0.74 propresp + 0.095 resplast
-
-   ​		 (.015)            (.000085)                  (.034)                 (.018)
+   respond = $\underset{(0.015)}{0.0023}$ + $\underset{(0.000085)}{0.00018}$ avggift + $\underset{(0.034)}{0.74}$ propresp + $\underset{(0.018)}{0.095}$ resplast
 
    ​
 
@@ -114,9 +106,7 @@
 
    > With Heteroskedstic White Correction
 
-   respond = 0.0023 + 0.00018 avggift + 0.74 propresp + 0.095 resplast
-
-   ​		 (.013)            (.000030)                  (.034)                 (.020)
+   respond = $\underset{(0.013)}{0.0023}$ + $\underset{(0.000030)}{0.00018}$ avggift + $\underset{(0.034)}{0.74}$ propresp + $\underset{(0.020)}{0.095}$ resplast
 
    ​
 
@@ -142,9 +132,7 @@
 
    ​
 
-   children = 6.11 -0.087 agebrth - 0.11 heduc + 0.18 electric -0.61 urban + 0.16 frsthalf
-
-   ​		  (0.30)       (0.015)            (0.011)                (0.15)           (0.11)              (0.098)
+   children = $\underset{(0.030)}{6.11}$ -$\underset{(0.015)}{0.087}$ agebrth - $\underset{(0.011)}{0.11}$ heduc + $\underset{(0.15)}{0.18}$ electric -$\underset{(0.11)}{0.61}$ urban + $\underset{(0.098)}{0.16}$ frsthalf
 
    ​
 
@@ -156,6 +144,8 @@
 
      Prob > chi2 = 0.0000
 
+     with STATA command
+
      ```
      estat hettest
      ```
@@ -166,6 +156,8 @@
 
      Prob > F = 0.0000
 
+     with STATA command
+
      ```
      estat hettest, fstat
      ```
@@ -174,15 +166,13 @@
 
    **Do you accept of reject Null Hypothesis? Interpret what accepting or rejecting will imply in this situation (3pt)**
 
-   I reject the null hypothesis in both LM and F test because the p-value in both cases are less than 0.05, the threshold. This means that under both LM and F test we have heteroskedasiticy.
+   I reject the null hypothesis in both LM and F test because the p-value in both cases are less than 0.05, the threshold at 95% confidence interval. This means that under both LM and F test we have heteroskedasiticy.
 
    ​
 
 3. **Estimate and write an equation for the above model using FGLS (2pt)**
 
-   children = 5.4 -0.059 agebrth - 0.090 heduc + 0.18 electric -0.61 urban + 0.16 frsthalf
-
-   ​		 (0.22)      (0.011)           (0.010)                 (0.13)               (0.10)            (0.088)
+   children = $\underset{(0.22)}{5.4}$ -$\underset{(0.011)}{0.059}$ agebrth - $\underset{(0.010)}{0.090}$ heduc + $\underset{(0.13)}{0.18}$ electric -$\underset{(0.10)}{0.61}$ urban + $\underset{(0.088)}{0.16}$ frsthalf
 
    ​
 
@@ -202,7 +192,7 @@
 
    ​
 
-   It dos not remove heteroskedasticity. Even after the FGLS estimation the p values of both  LM and F test is lower than 0.05, indicating it rejects null hypothesis.
+   It dos not remove heteroskedasticity. Even after the FGLS estimation the p values of both  LM and F test is lower than 0.05 at 95% confidence interval, indicating it rejects null hypothesis.
 
    ​
 
@@ -214,9 +204,7 @@
 
 6. **Write down the White robust standard errors for equation (1) (1pt)**
 
-   children = 6.11 -0.087 agebrth - 0.11 heduc + 0.18 electric -0.61 urban + 0.16 frsthalf
-
-   ​		  (0.28)       (0.014)            (0.011)                (0.13)           (0.11)              (0.098)
+   children = $\underset{(0.28)}{6.11}$ -$\underset{(0.014)}{0.087}$ agebrth - $\underset{(0.011)}{0.11}$ heduc + $\underset{(0.13)}{0.18}$ electric -$\underset{(0.11)}{0.61}$ urban + $\underset{(0.098)}{0.16}$ frsthalf
 
    ​
 
