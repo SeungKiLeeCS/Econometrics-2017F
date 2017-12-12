@@ -1,0 +1,421 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 3 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter-4.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="chapter-3.html">
+            
+                <a href="chapter-3.html">
+            
+                    
+                    Chapter 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter-4.html">
+            
+                <a href="chapter-4.html">
+            
+                    
+                    Chapter 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter-5.html">
+            
+                <a href="chapter-5.html">
+            
+                    
+                    Chapter 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter-7.html">
+            
+                <a href="chapter-7.html">
+            
+                    
+                    Chapter 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter-8.html">
+            
+                <a href="chapter-8.html">
+            
+                    
+                    Chapter 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="time-series.html">
+            
+                <a href="time-series.html">
+            
+                    
+                    Time Series
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 3</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-3--concepts-and-theorems">Chapter 3 : Concepts and Theorems</h1>
+<h3 id="gauss-markov-assumptions-mlr1---mlr5">Gauss-Markov Assumptions (<script type="math/tex; ">MLR.1 - MLR.5</script>)</h3>
+<ul>
+<li><h5 id="mlr1-linear-in-parameters">MLR.1 (Linear in Parameters)</h5>
+</li>
+</ul>
+<p>The relationship between y and x is linear. partial derivative of any given independent variable must be constant.</p>
+<p><script type="math/tex; ">y = \beta_{0} + \beta_{1} x + u</script></p>
+<ul>
+<li><h5 id="mlr2-random-sampling">MLR.2 (Random Sampling)</h5>
+</li>
+</ul>
+<p><script type="math/tex; ">{(x_{i},y_{i}): i= 1,...,n}</script></p>
+<p>Guarantees that values of independent variable are not correlated.</p>
+<p>In Time Series, the assumption is omitted.</p>
+<ul>
+<li><h5 id="mlr3-no-perfect-collinearity">MLR.3 (No Perfect Collinearity)</h5>
+</li>
+</ul>
+<p>None of the independent variables should be a multiple of another</p>
+<p>None has perfect correlation with a linear combination of the others</p>
+<p>This would mean that some variable was redundant - can&#x2019;t &#x201D;identify&#x201D; the parameters</p>
+<p>Note that you can have some colinearity, just not Perfect Correlation. For instant, we can and have ran regression using educ2 = educ^2 along with educ. However we will not be able to run a regression using educ10 = 10 * educ along with educ.</p>
+<ul>
+<li><h5 id="mlr4-zero-conditional-mean">MLR.4 (Zero Conditional Mean)</h5>
+</li>
+</ul>
+<p>the zero conditional mean assumption is much more likely to hold because fewer things end up in the error. In which case no significant causal variables is omitted, guaranteeing no correlation between error terms and the independent variables.</p>
+<ul>
+<li><h5 id="mlr5-homoskedasticity">MLR.5 (Homoskedasticity)</h5>
+</li>
+</ul>
+<h5 id="var-ui--xisigma2"><script type="math/tex; ">Var (u_{i} | x_{i})=\sigma^2</script></h5>
+<p>variability of the unobserved influences does not depend on the value of the explanatory (x) variable. This saves us from the risk of overestimating the correlations.</p>
+<h3 id="what-is-gauss-markov-theorem">What is Gauss-Markov Theorem?</h3>
+<ul>
+<li><h5 id="gauss-markov-theorem-34">Gauss-Markov Theorem 3.4</h5>
+</li>
+</ul>
+<p>Under MLR.1-MLR.5, the OLS estimator is the Best Linear Unbiased Estimator(BLUE) of the regression coefficients</p>
+<p><script type="math/tex; ">Var (\hat{\beta_{j}}) \leq Var (\tilde{\beta_{j}})</script>    ,    <script type="math/tex; ">j = 0, 1, ... , k</script></p>
+<p>for all   <script type="math/tex; ">\displaystyle \sum_{i=1}^n w_{ij}y_{i}</script>   for which   <script type="math/tex; ">E(\tilde{\beta_{j}}) = \beta_{j}</script>  ,  <script type="math/tex; ">j = 0, 1, ... , k</script></p>
+<h3 id="what-does-blue-mean">What does BLUE mean?</h3>
+<p><strong>B</strong>est <strong>L</strong>inear <strong>U</strong>nbiased <strong>E</strong>stimator.</p>
+<h3 id="ols-estimates">OLS Estimates</h3>
+<ul>
+<li>Random Sample -&gt; as we&apos;ve seen from the assumptions</li>
+<li>Regression Residuals (<script type="math/tex; ">\hat{u}_{i} = y_{i} - \hat{\beta_{0}} - \hat{\beta_{1}}(x_{i1}) \ ... \  \hat{\beta_{k}}(x_{ik})</script>) -&gt; this means residuals are the unexplained difference between our input and output.</li>
+<li>Minimized Sum of Squared Residuals (<script type="math/tex; ">min \displaystyle \sum_{i=1}^n \hat{u_{i}^2} \  \rightarrow \ \hat{\beta_{0}}, \hat{\beta_{1}}, ... , \hat{\beta_{k}}</script> ) -&gt; since we have minimized variance between observed data and prediction this is good. In most cases computation will do the minimization.</li>
+<li>Coefficient Interpretation (<script type="math/tex; ">\beta_{j} = </script><script type="math/tex; ">\Delta{y} \over \Delta{x_{j}}</script>) -&gt; Ceteris Paribus, how much does y change by 1 unit change in jth independent variable.</li>
+</ul>
+<h3 id="interpretation-of-coefficients--slope-estimates">Interpretation of Coefficients / Slope Estimates</h3>
+<ul>
+<li><strong>Regular</strong></li>
+</ul>
+<p><script type="math/tex; ">y = \beta_{0} + \beta_{1}x + u</script></p>
+<p>per UNIT increase in x cause <script type="math/tex; ">\beta_{1}</script> UNIT increase in y</p>
+<p>I.E : <script type="math/tex; ">collegeGPA \ = \ 1.29 + 0.453 \ highschoolGPA</script></p>
+<p>So collegeGPA is increased by 0.453 unit if highschoolGPA is increased by 1 unit</p>
+<ul>
+<li><h5 id="logarithmic-dependent-variable">Logarithmic Dependent Variable</h5>
+</li>
+</ul>
+<p><script type="math/tex; ">\log{(y)} = \beta_{0} + \beta_{1}x + u</script></p>
+<p>per UNIT increase in x cause <script type="math/tex; ">\beta_{1}</script> PERCENT increase in y</p>
+<p>I.E : <script type="math/tex; ">\log{(wage)} \ = \ 4.175 + 0.142 \ experience</script></p>
+<p>So wage is increased by 14.2% per UNIT increase in experience.</p>
+<ul>
+<li><h5 id="logarithmic-dependent-and-independent-variable">Logarithmic Dependent and Independent Variable</h5>
+</li>
+</ul>
+<p><script type="math/tex; ">\log{(y)} = \beta_{0} + \beta_{1}\log{(x)} + u</script></p>
+<p>per PERCENT increase in x cause <script type="math/tex; ">\beta_{1}</script> PERCENT increase in y</p>
+<p>I.E : <script type="math/tex; ">\log{wage} \ = \ 4.175 + 0.42 \log{(age)}</script></p>
+<p>So wage is increased by 0.42% per UNIT increase in experience. You do not have to multiply the coefficient by 100 because log of age is already doing that for you in the regression.</p>
+<h5 id=""> </h5>
+<h3 id="goodness-of-fit-r2">Goodness of Fit (<script type="math/tex; ">R^2</script>)</h3>
+<p>Can only increase if another explanatory variable is added to the regression.</p>
+<p><script type="math/tex; ">R^2 = </script><script type="math/tex; ">(\displaystyle \sum_{i=1}^n (y_{i} - \tilde{y})(\tilde{y_{i}} - \tilde{\hat{y}}))^2 \over (\displaystyle \sum_{i=1}^n (y_{i} - \tilde{y})^2)(\displaystyle \sum_{i=1}^n (\hat{y_{i}} - \tilde{\hat{y}})^2)</script></p>
+<p>Let&apos;s look at what the hell this means :)<img src="assets/sst.jpg" alt="">SST(Total Sum of Squares) = SSR(Sum of Squared Regression) + SSE (Sum of Squared Erros)</p>
+<p>SSR : Sum of squared differences between the prediction for each observation, and the population mean(y).</p>
+<p>SSE : Sum of deviation of the response values from the fit to the response values</p>
+<p><script type="math/tex; ">R^2 \equiv { SSE \over SST} = {1- {SSR \over SST}}</script></p>
+<p>So <script type="math/tex; ">R^2</script> is the ratio of difference in observed and  predicted value in regards to the total difference.</p>
+<p>If another explanatory variable is added to the regression SSR would decrease, thus increasing <script type="math/tex; ">R^2</script>. In fact, that is the only way for goodness of fit to increase.</p>
+<h3 id="multicolinearity">Multicolinearity</h3>
+<p>Two explanatory variables are closely related. This usually means that they are multiples of each other, and thus one must be eliminated in order for regression to work.</p>
+<h3 id="variance-of-ols-estimators">Variance of OLS Estimators</h3>
+<p>As touched in MLR.5, homoskedasticity assumes that value of independent variable must not contain any information regarding variance of unobserved factors.</p>
+<p><script type="math/tex; ">Var ( { \hat { \beta_{ j } } } ) = { { \sigma^2 } \over { SST_{ j } ( 1-R^2_{ j } ) } }</script></p>
+<p><script type="math/tex; ">j = 1, 2, ... , k</script></p>
+<p><script type="math/tex; ">\sigma^2</script> is the variance of error term. <script type="math/tex; ">SST_{j}</script> is the total sample variation in variable <script type="math/tex; ">x_{j}</script>. <script type="math/tex; ">R^2_{j}</script> is the goodness of fit from a regression of variable <script type="math/tex; ">x_{j}</script> on all other independent variables including the constant.</p>
+<ul>
+<li><strong>Error Variance</strong></li>
+</ul>
+<p>High error variance will increase the sampling variance due to higher &quot;noise&quot; in the equation. Greater the error variance, less reliable the precision of the estimates. Error variance will not decrease even if you decrease the sample size.</p>
+<ul>
+<li><strong>Total Sample Variation in independent variable</strong></li>
+</ul>
+<p>More sample variation leads to more precise estimates. Total sample variation increases with the sample size. Therefore Increasing thesample size is a way to get more precise estimates. All this means is that more data you have, more precise your estimates will be.</p>
+<h3 id="error-variance">Error Variance</h3>
+<p>Homoskedasticity vs Heteroskedasticity : Whether the error variance has any relationship to the explanatory variable. Good way to abstract the relationship would be to take the log of variables in regression.</p>
+<h3 id="omitting-and-including-a-variable-type-1-vs-type-2-error">Omitting and Including a Variable (Type 1 vs Type 2 Error)</h3>
+<p>If you are including irrelevant variable (Type II error), the regression will not be affected. However this will increase your standard error.</p>
+<p>If you omit a relevant variable (Type I error), the regression will not give you a meaningful outcome.</p>
+<p>We have Hypothesis Testing for this.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter-4.html" class="navigation navigation-next " aria-label="Next page: Chapter 4">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 3","level":"1.2","depth":1,"next":{"title":"Chapter 4","level":"1.3","depth":1,"path":"chapter-4.md","ref":"chapter-4.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-3.md","mtime":"2017-12-12T04:03:00.666Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-12T04:13:39.045Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

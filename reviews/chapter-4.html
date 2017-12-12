@@ -1,0 +1,843 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 4 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter-5.html" />
+    
+    
+    <link rel="prev" href="chapter-3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter-3.html">
+            
+                <a href="chapter-3.html">
+            
+                    
+                    Chapter 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="chapter-4.html">
+            
+                <a href="chapter-4.html">
+            
+                    
+                    Chapter 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter-5.html">
+            
+                <a href="chapter-5.html">
+            
+                    
+                    Chapter 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter-7.html">
+            
+                <a href="chapter-7.html">
+            
+                    
+                    Chapter 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter-8.html">
+            
+                <a href="chapter-8.html">
+            
+                    
+                    Chapter 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="time-series.html">
+            
+                <a href="time-series.html">
+            
+                    
+                    Time Series
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 4</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-4--multiple-linear-regression">Chapter 4 : Multiple Linear Regression</h1>
+<h2 id="multiple-linear-regression">Multiple Linear Regression</h2>
+<ul>
+<li><strong>MLR.6 : Normality of the Error Term</strong></li>
+</ul>
+<p>This assumes unobserved factors and their variance are normally distributed around the population regression function regardless of explanatory variable.</p>
+<p><script type="math/tex; ">u_{i} \tilde{} Normal(0,\sigma^2)</script>, Independent from <script type="math/tex; ">x_{i1}, x_{i2}, ... , x_{ik}</script></p>
+<p><script type="math/tex; ">y|x \tilde{} Normal(\beta_{0} + \beta_{1}x_{1} + ... + \beta_{k}x_{k} , \sigma^2 )</script></p>
+<p>The error term is the sum of many different unobserved factors.</p>
+<p>Sum of independent factors are normaly distributed by Central Limit Theorem.</p>
+<ul>
+<li><strong>Normality and its problems</strong></li>
+</ul>
+<p>Problems:</p>
+<ol>
+<li>How many is &quot;many&quot; factors? What number do we need to have? -&gt; Sample Size <script type="math/tex; ">\geq</script> 31, Degree of Freedom <script type="math/tex; ">\geq</script>120</li>
+<li>Possibly very heterogenuous distribution of individual factors -&gt; Assumption is wrong for certain samples.</li>
+<li>How independent are the different factors? -&gt; Colinearity Problem</li>
+</ol>
+<p>Really the biggest problem with normality assumption of error terms is that it is empirical. In many cases normality is impossible or questionable by definition. However Inductively we can conclude that at the very least the error distribution will be &quot;close&quot; to normal distribution.</p>
+<p>Normality does not hold for values that cannot be negative like wage or time, and values that will inevitably have limitted integer outcomes such as number of arrests (most people would have arrests ranging from 0 ~ 10.), or dummy variables such as female, or unemployeed (binary value.)</p>
+<p>As mentioned in Chapter 3, the best way to normalize the data is by log transformation. First try taking log of dependent variable.</p>
+<p>Normality is the most important assumption in using OLS because this trait determines the BUE (doesn&apos;t even have to be linear!) of estimator.</p>
+<p>For Statistical Inference, normality can be substituted by large sample size.</p>
+<p>While MLR.1 - MLR.5 is referred to as the Gauss-Markov Assumption, including normality, MLR.1 - MLR.6 is referred to as  &quot;Classical Linear Model(CLM) assumptions&quot;</p>
+<ul>
+<li><strong>Theorem 4.1 : Normal Sampling Distribution</strong></li>
+</ul>
+<p>With CLM, we know</p>
+<p><script type="math/tex; ">\hat{\beta_{j}} \tilde{} {Normal({\beta_{j}},{Var(\hat{\beta_{j}})})}</script>, where the <script type="math/tex; ">\hat{\beta_{j}} </script> represents estimators normally distributed around the actual parameter with the variance.</p>
+<p><script type="math/tex; ">{ { \hat { \beta_{ j } }- \beta_{ j } } \over { std ( \hat {  \beta_{ j } } ) } }</script>  ~  <script type="math/tex; ">Normal(0, 1)</script> where the standarized estimators will follow a standard Normal distribution ranging from 0 ~ 1.</p>
+<h2 id="hypothesis-testing">Hypothesis Testing</h2>
+<h3 id="t-test-assuming-two-tail-test"><strong>T-Test &lt;Assuming Two Tail Test&gt;</strong></h3>
+<p>T-tests are used to test the significance of an explanatory variable.</p>
+<p>Let&apos;s assume the following Regression Eqaution.</p>
+<p><script type="math/tex; ">log{(y)} = \underset{(0.05)}{0.1} + \underset{(0.2)}{0.5}x_{1} + ... + \underset{(stddev_{j})}{\beta_{j}}x_{j}</script></p>
+<p>where</p>
+<p>Intercept : <script type="math/tex; ">\beta_{0} = 0.1 , \sigma_{0} = 0.05</script>,</p>
+<p>Coefficient1 : <script type="math/tex; ">\beta_{1} = 0.5,  \sigma_{1} = 0.2</script></p>
+<p>Coefficientj : <script type="math/tex; ">\beta_{j} = \beta_{j} , \sigma_{j} = stddev_{j}</script></p>
+<p>Sample size :  <script type="math/tex; ">n = 500</script></p>
+<p>Goodness of fit : <script type="math/tex; ">R^2 = 0.315</script></p>
+<ol>
+<li>Set up the Null and Alternative Hypothesis and Alternative Hypothesis<ol>
+<li>Null Hypothesis : Assumes that effect of independent variable <script type="math/tex; ">\beta_{j}{x_{j}}</script> is equal to Zero, thus the variable is statistically insignificant.</li>
+<li>Alternative Hypothesis : Assumes that effect of independent variable <script type="math/tex; ">\beta_{j}{x_{j}}</script> is greater or less than Zero, thus the variable is statistically significant. (Let&apos;s use greater than <script type="math/tex; ">></script> for now. It can be substituted with <script type="math/tex; ">\neq</script>, or <script type="math/tex; "><</script>)</li>
+<li>Notation would be, Test <script type="math/tex; ">H_{0} : \beta_{j}{x_{j}} = 0</script> against <script type="math/tex; ">Ha : \beta_{j}{x_{j}} \gt 0</script></li>
+<li>Let&apos;s assume for the example, that we are testing for significance of <script type="math/tex; ">x_{1}</script>. So our hypothesis would be :</li>
+<li>Test <script type="math/tex; ">H_{0} : \beta{x_{1}} = 0</script> against <script type="math/tex; ">Ha : \beta{x_{1}} \gt 0</script></li>
+</ol>
+</li>
+<li>Get the T-statistics<ol>
+<li>t-statistic is the coefficient of independent variable divided by its standard deviation.</li>
+<li><script type="math/tex; ">t_{\hat{\beta_{j}}} \equiv {\hat{\beta_{j}} \over {se(\hat{\beta_{j}})}}</script></li>
+<li>T-statistic is used to test the null hypothesis. Farther the estimated Coefficient is away from zero, more likely it is that we will reject null hypothesis. So in hypothesis test we see if the estimated coefficient is &quot;far enough&quot; from zero.</li>
+<li>How far is the &quot;far enough&quot;? That will depend on the variability of the coefficient, like the standard deviation. It is the unit by which we measure this &quot;farness.&quot; T-statistic measures how many estimated standard deviations away the estimated coefficient is away from zero. </li>
+<li>In a generic form, we will have <script type="math/tex; ">t_{x_{j}} = { {\beta_{j}} \over {\sigma_{j}} }</script> .  For our example :</li>
+<li><script type="math/tex; ">t_{x_{1}} = { {0.5} \over {0.2} } \approx 2.5</script></li>
+</ol>
+</li>
+<li><p>Calculate Degree of Freedom</p>
+<ol>
+<li><p>Degree of Freedom is used in looking up the critical value. It represents the number of values in the final calculation that are free to vary.</p>
+</li>
+<li><p>You calculate this by  <script type="math/tex; ">n - k - 1</script>, where n = sample size and k = number of independent variables. In our case, we have j independent variables. Let&apos;s say j = 3. In which case, we have <script type="math/tex; ">df = 500 - 3 - 1 = 496</script></p>
+</li>
+</ol>
+</li>
+<li><p>Get the critical value</p>
+<ol>
+<li><p>Critical Value is a threshold that you use to accept or reject null hypothesis. It is different for varying degree of freedom and significance level. Notation for Critival Value is <script type="math/tex; ">c_{\alpha}</script>, where alpha is a value between 0 and 1 (ideally at most 0.2). Below is a table for looking up critical values.</p>
+</li>
+<li><p><strong>T-Distribution Table : Two Tail Test</strong></p>
+</li>
+</ol>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">df</th>
+<th style="text-align:left">a = 0.2</th>
+<th style="text-align:left">0.10</th>
+<th style="text-align:left">0.05</th>
+<th style="text-align:left">0.02</th>
+<th style="text-align:left">0.01</th>
+<th style="text-align:left">0.002</th>
+<th style="text-align:left">0.001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x221E;</td>
+<td style="text-align:left">1.282</td>
+<td style="text-align:left">1.645</td>
+<td style="text-align:left">1.960</td>
+<td style="text-align:left">2.326</td>
+<td style="text-align:left">2.576</td>
+<td style="text-align:left">3.091</td>
+<td style="text-align:left">3.291</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">3.078</td>
+<td style="text-align:left">6.314</td>
+<td style="text-align:left">12.706</td>
+<td style="text-align:left">31.821</td>
+<td style="text-align:left">63.656</td>
+<td style="text-align:left">318.289</td>
+<td style="text-align:left">636.578</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">1.886</td>
+<td style="text-align:left">2.920</td>
+<td style="text-align:left">4.303</td>
+<td style="text-align:left">6.965</td>
+<td style="text-align:left">9.925</td>
+<td style="text-align:left">22.328</td>
+<td style="text-align:left">31.600</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left">1.638</td>
+<td style="text-align:left">2.353</td>
+<td style="text-align:left">3.182</td>
+<td style="text-align:left">4.541</td>
+<td style="text-align:left">5.841</td>
+<td style="text-align:left">10.214</td>
+<td style="text-align:left">12.924</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">1.533</td>
+<td style="text-align:left">2.132</td>
+<td style="text-align:left">2.776</td>
+<td style="text-align:left">3.747</td>
+<td style="text-align:left">4.604</td>
+<td style="text-align:left">7.173</td>
+<td style="text-align:left">8.610</td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left">1.476</td>
+<td style="text-align:left">2.015</td>
+<td style="text-align:left">2.571</td>
+<td style="text-align:left">3.365</td>
+<td style="text-align:left">4.032</td>
+<td style="text-align:left">5.894</td>
+<td style="text-align:left">6.869</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">1.440</td>
+<td style="text-align:left">1.943</td>
+<td style="text-align:left">2.447</td>
+<td style="text-align:left">3.143</td>
+<td style="text-align:left">3.707</td>
+<td style="text-align:left">5.208</td>
+<td style="text-align:left">5.959</td>
+</tr>
+<tr>
+<td style="text-align:left">7</td>
+<td style="text-align:left">1.415</td>
+<td style="text-align:left">1.895</td>
+<td style="text-align:left">2.365</td>
+<td style="text-align:left">2.998</td>
+<td style="text-align:left">3.499</td>
+<td style="text-align:left">4.785</td>
+<td style="text-align:left">5.408</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">1.397</td>
+<td style="text-align:left">1.860</td>
+<td style="text-align:left">2.306</td>
+<td style="text-align:left">2.896</td>
+<td style="text-align:left">3.355</td>
+<td style="text-align:left">4.501</td>
+<td style="text-align:left">5.041</td>
+</tr>
+<tr>
+<td style="text-align:left">9</td>
+<td style="text-align:left">1.383</td>
+<td style="text-align:left">1.833</td>
+<td style="text-align:left">2.262</td>
+<td style="text-align:left">2.821</td>
+<td style="text-align:left">3.250</td>
+<td style="text-align:left">4.297</td>
+<td style="text-align:left">4.781</td>
+</tr>
+<tr>
+<td style="text-align:left">10</td>
+<td style="text-align:left">1.372</td>
+<td style="text-align:left">1.812</td>
+<td style="text-align:left">2.228</td>
+<td style="text-align:left">2.764</td>
+<td style="text-align:left">3.169</td>
+<td style="text-align:left">4.144</td>
+<td style="text-align:left">4.587</td>
+</tr>
+<tr>
+<td style="text-align:left">11</td>
+<td style="text-align:left">1.363</td>
+<td style="text-align:left">1.796</td>
+<td style="text-align:left">2.201</td>
+<td style="text-align:left">2.718</td>
+<td style="text-align:left">3.106</td>
+<td style="text-align:left">4.025</td>
+<td style="text-align:left">4.437</td>
+</tr>
+<tr>
+<td style="text-align:left">12</td>
+<td style="text-align:left">1.356</td>
+<td style="text-align:left">1.782</td>
+<td style="text-align:left">2.179</td>
+<td style="text-align:left">2.681</td>
+<td style="text-align:left">3.055</td>
+<td style="text-align:left">3.930</td>
+<td style="text-align:left">4.318</td>
+</tr>
+<tr>
+<td style="text-align:left">13</td>
+<td style="text-align:left">1.350</td>
+<td style="text-align:left">1.771</td>
+<td style="text-align:left">2.160</td>
+<td style="text-align:left">2.650</td>
+<td style="text-align:left">3.012</td>
+<td style="text-align:left">3.852</td>
+<td style="text-align:left">4.221</td>
+</tr>
+<tr>
+<td style="text-align:left">14</td>
+<td style="text-align:left">1.345</td>
+<td style="text-align:left">1.761</td>
+<td style="text-align:left">2.145</td>
+<td style="text-align:left">2.624</td>
+<td style="text-align:left">2.977</td>
+<td style="text-align:left">3.787</td>
+<td style="text-align:left">4.140</td>
+</tr>
+<tr>
+<td style="text-align:left">15</td>
+<td style="text-align:left">1.341</td>
+<td style="text-align:left">1.753</td>
+<td style="text-align:left">2.131</td>
+<td style="text-align:left">2.602</td>
+<td style="text-align:left">2.947</td>
+<td style="text-align:left">3.733</td>
+<td style="text-align:left">4.073</td>
+</tr>
+<tr>
+<td style="text-align:left">16</td>
+<td style="text-align:left">1.337</td>
+<td style="text-align:left">1.746</td>
+<td style="text-align:left">2.120</td>
+<td style="text-align:left">2.583</td>
+<td style="text-align:left">2.921</td>
+<td style="text-align:left">3.686</td>
+<td style="text-align:left">4.015</td>
+</tr>
+<tr>
+<td style="text-align:left">17</td>
+<td style="text-align:left">1.333</td>
+<td style="text-align:left">1.740</td>
+<td style="text-align:left">2.110</td>
+<td style="text-align:left">2.567</td>
+<td style="text-align:left">2.898</td>
+<td style="text-align:left">3.646</td>
+<td style="text-align:left">3.965</td>
+</tr>
+<tr>
+<td style="text-align:left">18</td>
+<td style="text-align:left">1.330</td>
+<td style="text-align:left">1.734</td>
+<td style="text-align:left">2.101</td>
+<td style="text-align:left">2.552</td>
+<td style="text-align:left">2.878</td>
+<td style="text-align:left">3.610</td>
+<td style="text-align:left">3.922</td>
+</tr>
+<tr>
+<td style="text-align:left">19</td>
+<td style="text-align:left">1.328</td>
+<td style="text-align:left">1.729</td>
+<td style="text-align:left">2.093</td>
+<td style="text-align:left">2.539</td>
+<td style="text-align:left">2.861</td>
+<td style="text-align:left">3.579</td>
+<td style="text-align:left">3.883</td>
+</tr>
+<tr>
+<td style="text-align:left">20</td>
+<td style="text-align:left">1.325</td>
+<td style="text-align:left">1.725</td>
+<td style="text-align:left">2.086</td>
+<td style="text-align:left">2.528</td>
+<td style="text-align:left">2.845</td>
+<td style="text-align:left">3.552</td>
+<td style="text-align:left">3.850</td>
+</tr>
+<tr>
+<td style="text-align:left">21</td>
+<td style="text-align:left">1.323</td>
+<td style="text-align:left">1.721</td>
+<td style="text-align:left">2.080</td>
+<td style="text-align:left">2.518</td>
+<td style="text-align:left">2.831</td>
+<td style="text-align:left">3.527</td>
+<td style="text-align:left">3.819</td>
+</tr>
+<tr>
+<td style="text-align:left">22</td>
+<td style="text-align:left">1.321</td>
+<td style="text-align:left">1.717</td>
+<td style="text-align:left">2.074</td>
+<td style="text-align:left">2.508</td>
+<td style="text-align:left">2.819</td>
+<td style="text-align:left">3.505</td>
+<td style="text-align:left">3.792</td>
+</tr>
+<tr>
+<td style="text-align:left">23</td>
+<td style="text-align:left">1.319</td>
+<td style="text-align:left">1.714</td>
+<td style="text-align:left">2.069</td>
+<td style="text-align:left">2.500</td>
+<td style="text-align:left">2.807</td>
+<td style="text-align:left">3.485</td>
+<td style="text-align:left">3.768</td>
+</tr>
+<tr>
+<td style="text-align:left">24</td>
+<td style="text-align:left">1.318</td>
+<td style="text-align:left">1.711</td>
+<td style="text-align:left">2.064</td>
+<td style="text-align:left">2.492</td>
+<td style="text-align:left">2.797</td>
+<td style="text-align:left">3.467</td>
+<td style="text-align:left">3.745</td>
+</tr>
+<tr>
+<td style="text-align:left">25</td>
+<td style="text-align:left">1.316</td>
+<td style="text-align:left">1.708</td>
+<td style="text-align:left">2.060</td>
+<td style="text-align:left">2.485</td>
+<td style="text-align:left">2.787</td>
+<td style="text-align:left">3.450</td>
+<td style="text-align:left">3.725</td>
+</tr>
+<tr>
+<td style="text-align:left">26</td>
+<td style="text-align:left">1.315</td>
+<td style="text-align:left">1.706</td>
+<td style="text-align:left">2.056</td>
+<td style="text-align:left">2.479</td>
+<td style="text-align:left">2.779</td>
+<td style="text-align:left">3.435</td>
+<td style="text-align:left">3.707</td>
+</tr>
+<tr>
+<td style="text-align:left">27</td>
+<td style="text-align:left">1.314</td>
+<td style="text-align:left">1.703</td>
+<td style="text-align:left">2.052</td>
+<td style="text-align:left">2.473</td>
+<td style="text-align:left">2.771</td>
+<td style="text-align:left">3.421</td>
+<td style="text-align:left">3.689</td>
+</tr>
+<tr>
+<td style="text-align:left">28</td>
+<td style="text-align:left">1.313</td>
+<td style="text-align:left">1.701</td>
+<td style="text-align:left">2.048</td>
+<td style="text-align:left">2.467</td>
+<td style="text-align:left">2.763</td>
+<td style="text-align:left">3.408</td>
+<td style="text-align:left">3.674</td>
+</tr>
+<tr>
+<td style="text-align:left">29</td>
+<td style="text-align:left">1.311</td>
+<td style="text-align:left">1.699</td>
+<td style="text-align:left">2.045</td>
+<td style="text-align:left">2.462</td>
+<td style="text-align:left">2.756</td>
+<td style="text-align:left">3.396</td>
+<td style="text-align:left">3.660</td>
+</tr>
+<tr>
+<td style="text-align:left">30</td>
+<td style="text-align:left">1.310</td>
+<td style="text-align:left">1.697</td>
+<td style="text-align:left">2.042</td>
+<td style="text-align:left">2.457</td>
+<td style="text-align:left">2.750</td>
+<td style="text-align:left">3.385</td>
+<td style="text-align:left">3.646</td>
+</tr>
+<tr>
+<td style="text-align:left">60</td>
+<td style="text-align:left">1.296</td>
+<td style="text-align:left">1.671</td>
+<td style="text-align:left">2.000</td>
+<td style="text-align:left">2.390</td>
+<td style="text-align:left">2.660</td>
+<td style="text-align:left">3.232</td>
+<td style="text-align:left">3.460</td>
+</tr>
+<tr>
+<td style="text-align:left">120</td>
+<td style="text-align:left">1.289</td>
+<td style="text-align:left">1.658</td>
+<td style="text-align:left">1.980</td>
+<td style="text-align:left">2.358</td>
+<td style="text-align:left">2.617</td>
+<td style="text-align:left">3.160</td>
+<td style="text-align:left">3.373</td>
+</tr>
+<tr>
+<td style="text-align:left">&gt; 120</td>
+<td style="text-align:left">1.282</td>
+<td style="text-align:left">1.645</td>
+<td style="text-align:left">1.960</td>
+<td style="text-align:left">2.326</td>
+<td style="text-align:left">2.576</td>
+<td style="text-align:left">3.091</td>
+<td style="text-align:left">3.291</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><p>Confidence Interval is the Center Area of the distribution. CI of 95% means that the 2.5% of the distribution is cut out on each end. Since we cut out parts from both ends, or tails of the distribution, we call this a <strong>two tail test</strong>. The Center Area is <script type="math/tex; ">1 - \alpha</script>, where alpha stands for tail areas. For 95% CI, <script type="math/tex; ">\alpha = 0.05</script>) Note that this is a Two Tail test. For one tail test, alpha value will be half of two tail test&apos;s.</p>
+</li>
+<li><p>At 95% confidence interval and <script type="math/tex; ">df \gt 120</script>, it&apos;s good to remember that <script type="math/tex; ">c_{0.05} = 1.96</script>.</p>
+</li>
+<li><p>With our example, we will assume we want to test the hypothesis on 95% confidence interval. Since <script type="math/tex; ">CI = 1 - \alpha</script> in a two tail test, we know that <script type="math/tex; ">\alpha_{j} = 1- 0.95 = 0.05</script>. We already know that our df &gt; 120. So look at the table to see the df &gt; 120, and alpha value at 0.05. You can see that the critical value or <script type="math/tex; ">c_{0.05} = 1.960</script>. Or, you can conviniently remember this number.</p>
+<ol>
+<li><p>Now, Compare the critival value to the t-statistic.</p>
+</li>
+<li><p>If critical value &lt; t-statistic, reject null hypothesis and conclude that &quot;The effect of independent variable <script type="math/tex; ">x_{j}</script> on dependent variable <script type="math/tex; ">y</script> is statistically greater than zero at <script type="math/tex; ">c \%</script> significance level, thus statistically significant at <script type="math/tex; ">c \%</script> level.&quot;</p>
+</li>
+<li><p>If critical value &gt; t-statistic, accept null hypothesis and conclude that &quot;The effect of independent variable <script type="math/tex; ">x_{j}</script> on dependent variable <script type="math/tex; ">y</script> is statistically equal to zero at <script type="math/tex; ">c \%</script> significance level, thus statistically insignificant at <script type="math/tex; ">c \%</script> level.</p>
+</li>
+<li><p>For our example, we have <script type="math/tex; ">t_{x_{1}} \approx 2.5</script> and <script type="math/tex; ">c_{0.05} = 1.960</script>. We can see that <script type="math/tex; ">2.5 > 1.960</script>, so the t-statistic is greater than the c-value.</p>
+</li>
+<li><p>Thus we will conclude : &quot;The effect of independent variable <script type="math/tex; ">x_{1}</script> on dependent variable <script type="math/tex; ">y</script> is statistically greater than zero at 5% significance level and thus statistically significant at 5% level.&quot;</p>
+</li>
+<li><p>On the other hand, if we use different threshold, for instance 99% Confidence Interval, we will get <script type="math/tex; ">c_{0.01} = 2.576</script>. We can see that <script type="math/tex; ">2.5 < 2.576</script>, thus we will conclude &quot;The effect of independent variable <script type="math/tex; ">x_{1}</script> on dependent variable <script type="math/tex; ">y</script> is statistically equal to zero at 1% significance level and thus statistically insignificant at 1% level.&quot;</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="f-test"><strong>F-Test</strong></h3>
+<p>F-test tests exclusion restictions.</p>
+<p>With this test, we are trying to see if the variances of two different sets are the same. This is useful because you can use F-test to see whether a variable is significant given the other variables in the regression.</p>
+<p>F-test joins the multiple tests for significance testing. Conceptually, given equation :</p>
+<p><script type="math/tex; ">log{(y)} = \beta_{0} + \beta_{1}x_{1} + \beta_{2}x_{2} + \beta_{3}x_{3}</script></p>
+<p>We will have null and alternative hypothesis :</p>
+<p>Test <script type="math/tex; ">H_{0} : \beta_{1} = 0, \beta_{2} = 0, \beta_{3} = 0</script> against <script type="math/tex; ">H_{a} : H_{0} \  is \  false</script></p>
+<p>At a glance, the F-test has much harsher standard for accepting the null hypothesis given that all of these conditions must be met. However we use F-test for variables that will normally (With T-Test) be considered insignificant. Let&apos;s make a real number example.</p>
+<ul>
+<li>Unrestricted Model (Do not drop insignificant variables)</li>
+</ul>
+<p><script type="math/tex; ">log{(y)} = \underset{(11.19)}{0.29} + \underset{(0.0713)}{0.0125}x_{1} +
+\underset{(0.0202)}{0.0013}x_{2} + \underset{(0.00110)}{0.00098}x_{3} + \underset{(0.0144)}{0.0161}x_{4} + \underset{(0.0108)}{0.0072}x_{5}</script></p>
+<p><script type="math/tex; ">n = 353, \  SSR = 183.186, \  R^2 = 0.6278</script></p>
+<p>Without even doing the full t-test, you can see that all independent variables past x2 will be insignificant at 95% confidence interval because the standard deviation is bigger than the coefficient, or only slighly smaller. We know that this will force t-statistic to be smaller than 1.00 for most of these, and we already saw that even with alpha value as large as 0.2 the critical value is 1.282, which is still greater than 1.00.</p>
+<p>So for above model, we will run a F-test.</p>
+<p>Note that we have SSR this time. If the insignificant variables are dropped, the SSR will increase and goodness of fit will decrease by definition. What we want to know is whether this increase in SSR is significant. In other words, does dropping seemingly insignificant variables (that we found using t-test) change anything in regression?</p>
+<ul>
+<li>Restricted Model (Drop the insignificant variables)</li>
+</ul>
+<p><script type="math/tex; ">log{(y)} = \underset{(11.19)}{0.29} + \underset{(0.0713)}{0.0125}x_{1} +
+\underset{(0.0202)}{0.0013}x_{2}</script></p>
+<p><script type="math/tex; ">n = 353, \  SSR = 198.311, \  R^2 = 0.5971</script></p>
+<p>With both Models, lets compute the F-statistic.</p>
+<p><script type="math/tex; ">{ F = { { ( SSR{ r } - SSR{ ur } ) / q } \over { SSR_{ ur } / ( n-k-1 ) } } } </script></p>
+<p><script type="math/tex; ">F</script>   ~   <script type="math/tex; ">{ F_{ q , \ n-k-1 } }</script></p>
+<p>where</p>
+<p><script type="math/tex; ">SSR_{r}</script> : SSR of restricted model. The increase in SSR when null hypothesis is accpted follows F-distribution.</p>
+<p><script type="math/tex; ">SSR_{ur}</script> : SSR of unrestricted model</p>
+<p><script type="math/tex; ">q</script> : Number of Restrictions (How many variables did you drop?)</p>
+<p><script type="math/tex; ">(n-k-1)</script> : degree of freedom (note that k is total number of independent variables or independent varaibles of unrestricted model)</p>
+<p><script type="math/tex; ">CI = 0.99</script></p>
+<p><script type="math/tex; ">\alpha = 0.01</script></p>
+<p>Note that Confidence interval is set at very high level in order to be absolutly sure when we are dropping the restroction or the insignificant independent variable. Now let&apos;s do F-Test</p>
+<ol>
+<li>Compute F-statistic<ol>
+<li><script type="math/tex; ">{ F = { { ( 198.311 - 183.186 ) / 3 } \over { 183.186 / ( 353-5-1 ) } } } \approx 9.55</script></li>
+</ol>
+</li>
+<li>Get Critical Value<ol>
+<li><script type="math/tex; ">F</script>  ~  <script type="math/tex; ">F_{3, \ 347} \rightarrow</script> <script type="math/tex; ">c_{0.01} = 3.782</script></li>
+<li>The critical value can be looked up from F-distribution Table. Let&apos;s assume I know what I&apos;m doing and not actually generate multiple tables using multiple alpha value. Because we have q, df, and alpha value to consider, the table for F-distribution either has to be 3 dimensional, drawn in Karnaugh Maps or be separated into multiple tables.</li>
+<li>Just to leave no stone unturned, here&apos;s how you look up the critical value from F-distribution table.<ol>
+<li>First find your alpha/p value. (ie. p = 0.01) 0.01 is pretty standard.</li>
+<li>In that table, look at the top row and find the column with your q value. (ie. 3)</li>
+<li>Down that row, look at the left most column and find your df (ie. 343)</li>
+<li>That&apos;s the value you need to use.</li>
+<li>Check the above work with F-distribution Table from <a href="http://www.socr.ucla.edu/applets.dir/f_table.html#FTable0.01" target="_blank">UCLA resource</a>.</li>
+</ol>
+</li>
+<li>Now, check the probability of your F-distribution critical value being greater than your computed F-statistic.<ol>
+<li>That is, <script type="math/tex; ">P(F-distribution \  > \ F-statistic ) = m \ | \ 0.000 \leq m \leq 1.000</script></li>
+<li>the probabilty m must be between 0 and 1.</li>
+<li>For our example, <script type="math/tex; ">P(3.782 \  > \ 9.55 ) = 0.000</script>. Obviously because their&apos;s no fking way that 9.55 is less than 3.782.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>Draw conclusion  </p>
+<ol>
+<li>If F-distribution &gt; F-statistic, then you cannot reject the null hypothesis. The variables you had were useless. You say &quot;these variables are jointly insignificant.&quot;  </li>
+<li>If F-distribution &lt; F-statistic, then you reject the null hypothesis. The variables obviously have significance in the regression. You say &quot;these variables are jointly significant&quot;  </li>
+<li>For our case, the null hypothesis is rejected hard. So we can conclude that &quot;These variables are jointly significant.&quot;</li>
+</ol>
+</li>
+<li><p>Rejection Rule</p>
+</li>
+</ol>
+<p>F-distribution is always positive in value as evident by the fact that SSR can only increase if variables are dropped. Because of this, there is no two tail test like t-test. Rather this one form of F-testing works for general multiple linear hypotheses.</p>
+<ul>
+<li>Why do we need this test?</li>
+</ul>
+<p>As you can see from our example, three variables that were insignificant in individual t-test turned out to be significant in joint f-testing. This sugguests that these three variables have multicolinearity. A good way to get rid of the structural multicolinearity would be actually doing more research and getting more data so you can come up with one composite variable that will replace all three variables. In the mean time, we use F-test as the bandage to run the regression while someone else fixes the problem with dataset.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter-3.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 3">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter-5.html" class="navigation navigation-next " aria-label="Next page: Chapter 5">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 4","level":"1.3","depth":1,"next":{"title":"Chapter 5","level":"1.4","depth":1,"path":"chapter-5.md","ref":"chapter-5.md","articles":[]},"previous":{"title":"Chapter 3","level":"1.2","depth":1,"path":"chapter-3.md","ref":"chapter-3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-4.md","mtime":"2017-12-12T04:11:27.121Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-12T04:13:39.045Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
