@@ -4,6 +4,8 @@ https://seungkileesmu.github.io/Econometrics-2017F/
 
 ​				*This page is Edited to be Deployed in Render HTML using Typora*
 
+https://seungkileesmu.github.io/Econometrics-2017F/
+
 ## Objective
 
 ---
