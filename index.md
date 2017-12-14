@@ -1,3 +1,5 @@
+https://seungkileesmu.github.io/Econometrics-2017F/
+
 # Econometrics using STATA
 
 ​				*This page is Edited to be Deployed in Render HTML using Typora*
